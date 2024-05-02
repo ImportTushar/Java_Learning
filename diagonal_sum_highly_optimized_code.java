@@ -1,5 +1,5 @@
 public class diagonal_sum_highly_optimized_code{
-        public static void DiagonalSum(int matrix[][]){
+        public static void DiagonalSum(int matrix[][]){ // on2
             int sum = 0;
             for(int i=0;i<matrix.length;i++){
                 for(int j=0;j<matrix[0].length;j++){
@@ -16,6 +16,11 @@ public class diagonal_sum_highly_optimized_code{
                         }
                     }
                 }
+
+            for(int i=0; i<matrix.length; i++){
+                sum += matrix[i][matrix.length-i-1];
+            }
+                
                 return sum;
             }
             
