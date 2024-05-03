@@ -33,6 +33,6 @@ public class Java_2d_array_Matrix {
         System.out.println();
         }
 
-        search(matrix,5)
+        search(matrix,5);
     }
 }
